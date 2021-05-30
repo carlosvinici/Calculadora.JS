@@ -1,2 +1,6 @@
-# Calculadora
- Uma calculadora padrão com Html, Css e JavaScripit
+# Calculadora com JavaScript
+
+![Design preview](./design/calc.MHTML)
+
+
+[Carlos Vinicius](https://www.linkedin.com/in/carlos-vinicius-silva/) 
