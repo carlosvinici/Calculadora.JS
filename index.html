@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+</head>
+<header>
+    <h1>Calculadora</h1>
+</header>
+<body>
+    <div id="container" class="container">
+        <div class="tela">
+            <div id="resultado"></div>
+        </div>
+
+        <div id="entDados" class="entDados">
+            <button onclick="recebeNumero('%')"><p>%</p></button>
+            <button onclick="recebeNumero('CE')"><p>CE</p></button>
+            <button onclick="clean()"><p>C</p></button>
+            <button onclick="back()"><p>del</p></button>
+            <button onclick="recebeNumero(7)"><p>7</p></button>
+            <button onclick="recebeNumero(8)"><p>8</p></button>
+            <button onclick="recebeNumero(9)"><p>9</p></button>
+            <button onclick="recebeNumero('/')"><p>/</p></button>
+            <button onclick="recebeNumero(4)"><p>4</p></button>
+            <button onclick="recebeNumero(5)"><p>5</p></button>
+            <button onclick="recebeNumero(6)"><p>6</p></button>
+            <button onclick="recebeNumero('*')"><p>*</p></button>
+            <button onclick="recebeNumero(1)"><p>1</p></button>
+            <button onclick="recebeNumero(2)"><p>2</p></button>
+            <button onclick="recebeNumero(3)"><p>3</p></button>
+            <button onclick="recebeNumero('-')"><p>-</p></button>
+            <button onclick="recebeNumero('.')"><p>.</p></button>
+            <button onclick="recebeNumero(0)"><p>0</p></button>
+            <button onclick="calcular()"><p>=</p></button>
+            <button onclick="recebeNumero('+')"><p>+</p></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
