@@ -7,12 +7,14 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
-    display: flex;
-    justify-content: center;
-    
+    display: flex;  
 }
 h1{ 
     background-color: rgba(255, 255, 255, 0.541);
@@ -30,11 +32,10 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: #E0E0E0;
+    align-items: center;
     height: 604px;
     width: 442px;
     box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.226), -4px -5px 0px 2px rgba(255, 255, 255, 0.431);
-    align-items: center;
-    margin: 0 auto;
     padding-top: 24px;
 }
 
@@ -84,4 +85,40 @@ p{
 button:active{
     box-shadow:  1px 2px 1px rgba(0, 0, 0, 0.25);
     transition: 0.2s;
+}
+
+@media screen and (max-width: 550px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    header {
+        display: none;
+    }
+     .container{
+        height: 500px;
+        width: 320px;
+    } 
+    .tela{
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        width: 300px;
+    }
+    .entDados {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        height: 370px;
+        width: 300px;
+        padding: 0px;
+    }
+    button{
+        background-color: #ffff;
+        height: 50px;
+        width: 60px;
+        margin: 10px 5px 10px 5px;
+        padding: 0px;
+    }
 }
