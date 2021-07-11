@@ -13,7 +13,7 @@ function cancelEntry(){
         if (lastEntry > 0) {
             lastEntry--
         }
-        break
+        break;
     }
     document.getElementById('resultado').innerHTML = searchLastEntry.substring(0, lastEntry);
 }
