@@ -50,6 +50,10 @@ h1{
     border-radius: 11px;
 }
 #resultado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-break: break-all;
     padding: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;

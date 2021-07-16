@@ -1,7 +1,18 @@
 
-function recebeNumero(pm){
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + pm;
+function recebeNumero(entry){
+    let tela = document.getElementById('resultado').innerHTML;
+    let lastInner = tela[tela.length -1];
+
+    if(entry == '+' | entry == '-' | entry == '/' | entry == '*' && lastInner != '+' && lastInner != '-' && lastInner != '/' && lastInner != '*'){
+        document.getElementById('resultado').innerHTML = tela + entry;
+    } 
+    if( typeof entry == 'string' && typeof lastInner != 'string' ){
+        document.getElementById('resultado').innerHTML = tela + entry;
+    }
+    else if(entry <= 9){
+        document.getElementById('resultado').innerHTML = tela + entry;
+    }
+    
 }
 function clean(){
     document.getElementById('resultado').innerHTML = "";
